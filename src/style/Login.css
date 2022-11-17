@@ -1,0 +1,31 @@
+.loginContainer {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.loginCover {
+  background-image: url("../../assets/LoginWallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.loginCover::after {
+  background-color: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.loginButton{
+    position: relative;
+    z-index: 999;
+}

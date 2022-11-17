@@ -1,0 +1,54 @@
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #c4b6f2 !important;
+  transition: all 0.4s ease-in;
+}
+.nav-link:hover {
+  text-shadow: 0px 0px 15px #c4b6f2;
+  opacity: 0.6;
+  color: #fff !important;
+}
+.nav-link.active {
+  text-shadow: 0px 0px 15px #c4b6f2;
+  color: #fff !important;
+}
+.logo{
+  width: 7rem;
+  object-fit: contain;
+}
+
+.NavTittle{
+  transition: all 0.6s ease-in;
+  animation: shadow-drop-2-center 8s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+}
+
+@media screen and (max-width: 1200px) {
+  .switchLogInbtn{
+    margin-top: 2rem;
+  }
+}
+
+@keyframes shadow-drop-2-center {
+  0% {
+            transform: translateZ(0);
+            text-shadow: 0px 0px 10px #0B0719;
+  }
+  25% {
+            transform: translateZ(0);
+            text-shadow: 0px 0px 10px #464256;
+  }
+  50% {
+            transform: translateZ(0);
+            text-shadow: 0px 0px 15px rgb(250 250 250 / 96%);
+  }
+  75% {
+            transform: translateZ(0);
+            text-shadow: 0px 0px 10px #464256;
+  }
+  100% {
+            transform: translateZ(50px);
+            text-shadow: 0px 0px 10px #0B0719;
+  }
+}

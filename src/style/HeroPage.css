@@ -1,0 +1,135 @@
+.gradient-list > li::before,
+.gradient-list > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+
+.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+.gradient-list > li {
+  background: rgba(0,0,0,.2) ;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+.gradient-list > li::before,
+.gradient-list > li::after {
+  background: #ea429a;
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #fff;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+
+.gradient-list > li + li {
+  margin-top: 2rem;
+}
+/* dark theme */
+.gradient-list-dark > li::before,
+.gradient-list-dark > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+
+.gradient-list-dark {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+.gradient-list-dark > li {
+  background: #fff;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+.gradient-list-dark > li::before,
+.gradient-list-dark > li::after {
+  background: #ea429a;
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+.gradient-list-dark > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #fff;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+
+.gradient-list-dark > li + li {
+  margin-top: 2rem;
+}
+
+/* From uiverse.io by @mrhyddenn */
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: #ea429a;
+  box-shadow: 0 0 25px #ea429a;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #ea429a, 0 0 25px #ea429a,
+    0 0 50px #ea429a, 0 0 100px #ea429a;
+}
+
+.animate__animated.animate__slideInRight.animate1 {
+  --animate-duration: 1s;
+}
+.animate__animated.animate__slideInRight.animate2 {
+  --animate-duration: 1.2s;
+}
+.animate__animated.animate__slideInRight.animate3 {
+  --animate-duration: 1.3s;
+}
+.animate__animated.animate__slideInRight.animate4 {
+  --animate-duration: 1.4s;
+}
+.animate__animated.animate__slideInRight.animate5 {
+  --animate-duration: 1.5s;
+}
