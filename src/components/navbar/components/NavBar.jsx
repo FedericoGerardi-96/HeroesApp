@@ -14,7 +14,7 @@ import {
   LoginButton,
 } from "../../../style/styleComponent/index";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import Logo from "../../../../assets/Logo.svg";
+import Logo from "/assets/Logo.svg";
 import { AuthContext } from "../../auth/context/AuthContext";
 
 export const NavBar = () => {
