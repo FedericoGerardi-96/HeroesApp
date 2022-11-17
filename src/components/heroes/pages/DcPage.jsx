@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { H1 } from "../../../style/styleComponent/index";
 import { ThemeContext } from "../../context/ThemeContext";
 import { HeroList } from "../components";
-import Hero from "../../../../public/assets/Hero.jpg";
+import Hero from "../../../../assets/images/hero.jpg";
 
 export const DcPage = () => {
   const { theme, setHeroImage } = useContext(ThemeContext);

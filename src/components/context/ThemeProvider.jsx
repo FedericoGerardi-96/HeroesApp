@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { lightTheme, darkTheme } from "../../interface/Theme";
 import UseTheme from "../navbar/hooks/UseTheme";
-import Hero from "../../../public/assets/Hero.jpg";
+import Hero from "../../../assets/images/hero.jpg";
 
 export const ThemeProvider = ({ children }) => {
   const [theme, themeToggler, themeName] = UseTheme();

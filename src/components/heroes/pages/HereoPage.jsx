@@ -5,15 +5,59 @@ import { H1 } from "../../../style/styleComponent/index";
 import { ThemeContext } from "../../context/ThemeContext";
 import { getHeroById } from "../helpers/index";
 import "animate.css";
+import {
+  dc_arrow,
+  dc_batman,
+  dc_black,
+  dc_blue,
+  dc_flash,
+  dc_green,
+  dc_martian,
+  dc_robin,
+  dc_superman,
+  dc_wonder,
+  marvel_captain,
+  marvel_cyclops,
+  marvel_daredevil,
+  marvel_hawkeye,
+  marvel_hulk,
+  marvel_iron,
+  marvel_silver,
+  marvel_spider,
+  marvel_thor,
+  marvel_wolverine,
+} from "../../../interface/Images";
 
 export const HereoPage = () => {
+  const imagesList = [
+    dc_arrow,
+    dc_batman,
+    dc_black,
+    dc_blue,
+    dc_flash,
+    dc_green,
+    dc_martian,
+    dc_robin,
+    dc_superman,
+    dc_wonder,
+    marvel_captain,
+    marvel_cyclops,
+    marvel_daredevil,
+    marvel_hawkeye,
+    marvel_hulk,
+    marvel_iron,
+    marvel_silver,
+    marvel_spider,
+    marvel_thor,
+    marvel_wolverine,
+  ];
+
   const { id } = useParams();
   const hero = useMemo(() => getHeroById(id), [id]); // Para que la funcion solo se vuelva a dispara cuando cambie el ID, y no siempre que se renderice
   const { theme, setHeroImage, themeName } = useContext(ThemeContext);
   const navigate = useNavigate();
-
   useEffect(() => {
-    const heroImageUrl = `/assets/${id}.jpg`;
+    const heroImageUrl = imagesList.filter((word) => word.includes(id, word));
     setHeroImage(heroImageUrl);
   }, []);
 
@@ -33,7 +77,8 @@ export const HereoPage = () => {
     <div className="row mt-5 pb-5">
       <div className="col-4">
         <img
-          src={`/assets/${id}.jpg`}
+          // src={`/assets/images/${id}.jpg`}
+          src={imagesList.filter((word) => word.includes(id, word))}
           alt={hero.superhero}
           className="img-thumbnail animate__animated animate__zoomIn"
         ></img>
