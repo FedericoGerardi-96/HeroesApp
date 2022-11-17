@@ -13,7 +13,7 @@ export const HeroCard = ({
   characters,
 }) => {
   const { theme } = useContext(ThemeContext);
-  const heroImageUrl = `/assets/${id}.jpg`;
+  const heroImageUrl = `./assets/${id}.jpg`;
   return (
     <>
       <Card theme={theme} className="m-3 p-3">
