@@ -16,7 +16,9 @@ export const DcPage = () => {
     <>
       <H1 theme={theme}>DC Heroes</H1>
       <hr />
-      <HeroList publisher={publisher}></HeroList>
+      <div className="pb-5">
+        <HeroList publisher={publisher}></HeroList>
+      </div>
     </>
   );
 };

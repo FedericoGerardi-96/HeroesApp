@@ -5,18 +5,19 @@ import { HeroList } from "../components/HeroList";
 import Hero from "../../../../assets/images/hero.jpg";
 
 export const MarvelPage = () => {
-  const { theme, setHeroImage } = useContext(ThemeContext);  
+  const { theme, setHeroImage } = useContext(ThemeContext);
 
   useEffect(() => {
     setHeroImage(Hero);
-  }, [])
+  }, []);
   const publisher = "Marvel Comics";
   return (
     <>
       <H1 theme={theme}>Marvel Heroes</H1>
       <hr />
-      <HeroList publisher={publisher}></HeroList>
-
+      <div className="pb-5">
+        <HeroList publisher={publisher}></HeroList>
+      </div>
     </>
   );
 };
