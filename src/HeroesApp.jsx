@@ -1,5 +1,5 @@
 import { HeroesAppPage } from "./HeroesAppPage";
-import { ThemeProvider } from "./components/context/themeProvider";
+import { ThemeProvider } from "./components/context";
 
 function HeroesApp() {
   return (
